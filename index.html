@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
 <body>
 <section class="header">
-        <nav>z
+        <nav>
             <a href="index.html"><img src="./images/logo (1).png"></a>
+            <i class="fa fa-times" onclick="hideMenu()"></i>
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME </a></li>
                     <li><a href="about.html">ABOUT </a></li>
@@ -30,7 +30,7 @@
         <div class="text-box">
             <h1>World's Biggest University</h1>
             <p>Making Website Is One of The Greatest Thing In The World. You Just Need To Learn HTML, CSS, <br>Javascript and you are good to go</p>
-            <a href="" class="hero-btn">Visit Us To Know More</a>
+            <a href="about.html" class="hero-btn">Visit Us To Know More</a>
 
         </div>
     </section>
@@ -154,7 +154,7 @@
 
 <section class="cta">
     <h1>Enroll For Our Various Online Courses  <br>   <br>  <br> Anywhere From The World </h1>
-    <a href="" class="hero-btn">CONTACT US</a>
+    <a href="contact.html" class="hero-btn">CONTACT US</a>
 </section>
 
 <!------ footer ------>
@@ -180,7 +180,7 @@
 <!------ Javascript for Toggle Menu ------>
  <script>
         var navLinks = document.getElementById("navLinks");
-        function showMenu(){
+        function showMenu() {
             navLinks.style.right = "0";
         }
         function hideMenu() {
